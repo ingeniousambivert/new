@@ -14,13 +14,7 @@
     <link rel="shortcut icon" href="{{"/image/favicon.ico" | relURL}}" type="image/x-icon" />
 		<link rel="icon" href="{{"/image/favicon.ico" | relURL}}" type="image/x-icon" />
 		<script src="./assets/js/script.js"></script>
-<!-- Typed JS -->
-<script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
-<script>
-	var typed = new Typed('#typed', {
-	  stringsElement: '#typed-strings'
-	});
-  </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -103,34 +97,20 @@
 							</section>
 
 						<!-- Second Section -->
-							<section id="second" class="main special">
-								<header class="major">
-									<h2>I have worked on</h2>
-									<small>Here are a few of my projects that I've worked on by myself or collaborated with other talented developers to create.</small>
-								</header>
-								<ul class="statistics">
-									<li class="style1">
-										<span class="icon fa-code-fork"></span>
-										<strong>5,120</strong> Etiam
-									</li>
-									<li class="style2">
-										<span class="icon fa-folder-open-o"></span>
-										<strong>8,192</strong> Magna
-									</li>
-									<li class="style3">
-										<span class="icon fa-signal"></span>
-										<strong>2,048</strong> Tempus
-									</li>
-									<li class="style4">
-										<span class="icon fa-laptop"></span>
-										<strong>4,096</strong> Aliquam
-									</li>
-									<li class="style5">
-										<span class="icon fa-diamond"></span>
-										<strong>1,024</strong> Nullam
-									</li>
-								</ul>
-								<p class="content" id="output"></p>
+						
+								<!--Github Repos Fetched And Displayed Here-->
+						
+								<section id="second" class="main special">
+									<header class="major">
+										<h2>I have worked on</h2>
+										<small>Here are a few of my projects that I've worked on by myself or collaborated with other talented developers to create.</small>
+									</header>
+								
+									<div class="repo-container" >
+										<div class="repo-list" id="output">	
+											</div>		
+								</div>
+								
 								<footer class="major">
 									<ul class="actions special">
 										<li><a href="https://github.com/ingeniousambivert?tab=repositories" target="_blank" class="button small">Learn More</a></li>
@@ -202,12 +182,11 @@
       .then((data) => {
         let output = '';
         data.forEach(function(repo){
-          output += `
-            <div class="card card-body mb-3">
-              <h3>${repo.name}</h3>
-              <p>${repo.description}</p>
-            </div>
-          `;
+					output += `
+				
+			<strong><a style="color:white;" href="${repo.html_url} target="_blank">${repo.name}</a></strong> 
+			<p>${repo.description}</p><hr>
+					`;
         });
         document.getElementById('output').innerHTML = output;
       })
