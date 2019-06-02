@@ -12,7 +12,8 @@
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="shortcut icon" href="/image/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="{{"/image/favicon.ico" | relURL}}" type="image/x-icon" />
-    <link rel="icon" href="{{"/image/favicon.ico" | relURL}}" type="image/x-icon" />
+		<link rel="icon" href="{{"/image/favicon.ico" | relURL}}" type="image/x-icon" />
+		<script src="./assets/js/script.js"></script>
 <!-- Typed JS -->
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.9"></script>
 <script>
@@ -110,7 +111,7 @@
 							<section id="second" class="main special">
 								<header class="major">
 									<h2>I have worked on</h2>
-									<p>Here are a few of my digital products & projects that I've worked on by myself or collaborated with other talented developers to create for both business and consumer use.</p>
+									<small>Here are a few of my digital products & projects that I've worked on by myself or collaborated with other talented developers to create for both business and consumer use.</small>
 								</header>
 								<ul class="statistics">
 									<li class="style1">
@@ -134,7 +135,7 @@
 										<strong>1,024</strong> Nullam
 									</li>
 								</ul>
-								<p class="content">Nam elementum nisl et mi a commodo porttitor. Morbi sit amet nisl eu arcu faucibus hendrerit vel a risus. Nam a orci mi, elementum ac arcu sit amet, fermentum pellentesque et purus. Integer maximus varius lorem, sed convallis diam accumsan sed. Etiam porttitor placerat sapien, sed eleifend a enim pulvinar faucibus semper quis ut arcu. Ut non nisl a mollis est efficitur vestibulum. Integer eget purus nec nulla mattis et accumsan ut magna libero. Morbi auctor iaculis porttitor. Sed ut magna ac risus et hendrerit scelerisque. Praesent eleifend lacus in lectus aliquam porta. Cras eu ornare dui curabitur lacinia.</p>
+								<p class="content" id="output"></p>
 								<footer class="major">
 									<ul class="actions special">
 										<li><a href="generic.html" class="button">Learn More</a></li>
@@ -142,31 +143,38 @@
 								</footer>
 							</section>
 
-						<!-- Get Started -->
+						<!-- Contact -->
 							<section id="cta" class="main special">
-								<header class="major">
-									<h2>Congue imperdiet</h2>
-									<p>Donec imperdiet consequat consequat. Suspendisse feugiat congue<br />
-									posuere. Nulla massa urna, fermentum eget quam aliquet.</p>
-								</header>
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="generic.html" class="button primary">Get Started</a></li>
-										<li><a href="generic.html" class="button">Learn More</a></li>
-									</ul>
-								</footer>
-							</section>
+							
+									<h2>Write To Me</h2>
+									<p>Interested in learning more about my work or how we can collaborate on an upcoming project?
+										Queue Up a chat !</p>
+									<form action="https://formspree.io/monarchmaisuriya7600@gmail.com" method="POST">
+										<div class="row gtr-uniform">
+											<div class="col-6 col-12-xsmall">
+												<input type="text" name="name" id="demo-name" value="" placeholder="Name" />
+											</div>
+											<div class="col-6 col-12-xsmall">
+												<input type="email" name="email" id="demo-email" value="" placeholder="Email" />
+											</div>
+											
+											<div class="col-12">
+												<textarea name="demo-message" id="demo-message" placeholder="Enter your message" rows="6"></textarea>
+											</div>
+											<div class="col-12">
+												<input type="submit" value="Send Message" class="btn-grad" />
+											</div>
+										</div>
+									</form>
+								</section>
 
 					</div>
 
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
-							<h2>Aliquam sed mauris</h2>
-							<p>Sed lorem ipsum dolor sit amet et nullam consequat feugiat consequat magna adipiscing tempus etiam dolore veroeros. eget dapibus mauris. Cras aliquet, nisl ut viverra sollicitudin, ligula erat egestas velit, vitae tincidunt odio.</p>
-							<ul class="actions">
-								<li><a href="generic.html" class="button">Learn More</a></li>
-							</ul>
+							<h2>Inspiration</h2>
+							<p id="quote"></p>
 						</section>
 						<section>
 							<h2>Social Links</h2>
@@ -190,10 +198,62 @@
 		
 			<!-- Scripts -->
 			<script>
+				// To fetch Github Repo 
+
+    function getRepos(){
+      //fetch('https://jsonplaceholder.typicode.com/posts')
+			fetch('https://api.github.com/users/ingeniousambivert/repos?sort=created:asc&client_id=22ea12584240e7a2631f&client_secret=bc2deb37cb23d714f3b16483ba93a4a0e61f93e9')
+      .then((res) => res.json())
+      .then((data) => {
+        let output = '';
+        data.forEach(function(repo){
+          output += `
+            <div class="card card-body mb-3">
+              <h3>${repo.name}</h3>
+              <p>${repo.description}</p>
+            </div>
+          `;
+        });
+        document.getElementById('output').innerHTML = output;
+      })
+			 .catch((err) => console.log(err))
+    }
+
+		getRepos();
+
+  </script>
+			<script>
+			// To generate random quotes
+
+function randomQ() {
+    var q = new Array()
+
+    q[1] = "We have seen that computer programming is an art, because it applies accumulated knowledge to the world, because it requires skill and ingenuity, and especially because it produces objects of beauty. - Paul Graham";
+    q[2] = "Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the Universe trying to produce bigger and better idiots. So far, the Universe is winning. - Rich Cook";
+    q[3] = "A good programmer is someone who always looks both ways before crossing a one-way street. - Keith Weinberg";
+    q[4] = "Computer science education cannot make anybody an expert programmer any more than studying brushes and pigment can make somebody an expert painter. - Eric S. Raymond ";
+    q[5] = "Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to code. - Linus Torvalds";
+    q[6] = "You might not think programmers are artists, but programming is extremely creative profession. Its logic-based creativity. - John Romero";
+    q[7] = "Everyone should learn how to program a computer because it teaches you how to think. - Steve Jobs";
+    q[8] = "First solve the problem , then write the code. - John Johnson";
+    q[9] = "The most important property of a program is whether it accomplishes the intention of its user. - C.A.R Hoare";
+    q[10] = "Truth can only be found in one place: the code. - Robert C. Martin";
+    var ry = Math.floor(Math.random() * q.length);
+    if (ry == 0)
+        ry = 1;
+    document.getElementById("quote").innerHTML = q[ry];
+
+}
+randomQ();
+			</script>
+
+			<script>
+
 		 new TypeIt('#subHead', {
             speed: 30,
         }).pause(2000).type('Browse my growing portfolio of progressive development, feel free to drop a line.');;
 			</script>
+			
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
 			<script src="assets/js/jquery.scrolly.min.js"></script>
