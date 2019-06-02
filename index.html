@@ -106,10 +106,14 @@
 										<small>Here are a few of my projects that I've worked on by myself or collaborated with other talented developers to create.</small>
 									</header>
 								
-									<div class="repo-container" >
-										<div class="repo-list" id="output">	
-											</div>		
+							<div class="repo-container" >
+									<div class="row">
+										 <div class="column">
+									   	<div class="repo-list" id="output">	
+										</div>		
 								</div>
+							</div>		
+						</div>
 								
 								<footer class="major">
 									<ul class="actions special">
@@ -183,9 +187,11 @@
         let output = '';
         data.forEach(function(repo){
 					output += `
-				
-			<strong><a style="color:white;" href="${repo.html_url} target="_blank">${repo.name}</a></strong> 
-			<p>${repo.description}</p><hr>
+				<div style="margin:2%; padding:2%; color:white;background: -webkit-linear-gradient(to right, rgb(161, 109, 163), rgb(104, 128, 209));
+				background: linear-gradient(to right, rgb(161, 109, 163), rgb(104, 128, 209));  border-radius: 10px;"
+			<strong><a href="${repo.html_url} target="_blank">${repo.name}</a></strong> 
+			<p>${repo.description}</p>
+	</div>
 					`;
         });
         document.getElementById('output').innerHTML = output;
