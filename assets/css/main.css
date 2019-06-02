@@ -30,6 +30,7 @@ footer, header, hgroup, menu, nav, section {
 	display: block;}
 
 body {	
+	color:white;
 	line-height: 1;
 }
 a{
@@ -37,6 +38,9 @@ a{
 }
 ol, ul {
 	list-style: none;
+}
+h1{
+	color:white;
 }
 
 blockquote, q {
@@ -58,6 +62,23 @@ table {
 	-webkit-text-fill-color: transparent;
 }
 
+.repo-container{
+width: auto;
+height: 440px;
+background: -webkit-linear-gradient(to right, rgb(161, 109, 163), rgb(104, 128, 209));  
+background: linear-gradient(to right, rgb(161, 109, 163), rgb(104, 128, 209)); 
+border-radius: 10px;
+overflow-y: scroll;
+}
+
+
+.repo-list{
+	text-align:left;
+	color:white;
+	margin:5%;
+	line-break: auto;
+	border-radius: 10px;
+}
 body {
 	-webkit-text-size-adjust: none;
 }
@@ -3769,3 +3790,7 @@ input, select, textarea {
 			}
 
 		}
+
+
+
+		
