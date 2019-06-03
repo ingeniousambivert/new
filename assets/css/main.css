@@ -52,7 +52,7 @@ table {
 	border-spacing: 0;
 }
 #me{
-	background: -webkit-linear-gradient( #b993d6, rgb(148, 30, 103));
+	background: -webkit-linear-gradient(  right, #65c7f7, #0c429b);
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -2012,7 +2012,7 @@ input, select, textarea {
 		input[type="button"].primary,
 		button.primary,
 		.button.primary {
-			background-color: #8cc9f0;
+			background-color: #5392e4;
 			color: #ffffff !important;
 			box-shadow: none;
 		}
@@ -2022,7 +2022,7 @@ input, select, textarea {
 			input[type="button"].primary:hover,
 			button.primary:hover,
 			.button.primary:hover {
-				background-color: #9acff2;
+				background-color: #5392e4;
 			}
 
 			input[type="submit"].primary:active,
@@ -2030,7 +2030,7 @@ input, select, textarea {
 			input[type="button"].primary:active,
 			button.primary:active,
 			.button.primary:active {
-				background-color: #7ec3ee;
+				background-color: #5392e4;
 			}
 
 			input[type="submit"].primary.icon:before,
@@ -3445,7 +3445,7 @@ input, select, textarea {
 			#main input[type="button"].primary,
 			#main button.primary,
 			#main .button.primary {
-				background-color: #8cc9f0;
+				background-color: #5392e4;
 				color: #ffffff !important;
 				box-shadow: none;
 			}
@@ -3463,7 +3463,7 @@ input, select, textarea {
 				#main input[type="button"].primary:active,
 				#main button.primary:active,
 				#main .button.primary:active {
-					background-color: #7ec3ee;
+					background-color: #5392e4;
 				}
 
 				#main input[type="submit"].primary.icon:before,
