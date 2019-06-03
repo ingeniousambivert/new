@@ -11,7 +11,16 @@
 		<script src="./assets/js/script.js"></script>
 		  <!-- Bootstrap CSS -->
 			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"></script>
+		<!--TypeIt JS-->
+		<script src="https://cdn.jsdelivr.net/npm/typeit@VERSION_NUMBER/dist/typeit.min.js" />
+<script>
+		new TypeIt('#subhead', {
+  strings: 'Browse my growing portfolio of progressive development, feel free to drop a line.',
+  speed: 50,
+  waitUntilVisible: true
+}).go();
+</script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -26,7 +35,7 @@
 					<header id="header" class="alt">
 						<span class="logo"><img src="images/logo.svg" alt="" /></span>
 						<h1 id="head">Computer Whisperer</h1>
-						<p id="subhead" style="color:white;">Browse my growing portfolio of progressive development, feel free to drop a line.<br />
+						<p id="subhead" style="color:white;">Browse my growing portfolio of progressive development, feel free to drop a line.<br>
 						</p>
 					</header>
 
@@ -52,10 +61,10 @@
 												</header>
 										<ul class="nav nav-tabs" id="myTab" role="tablist">
 												<li class="nav-item">
-													<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Me</a>
+													<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Mainstream</a>
 												</li>
 												<li class="nav-item">
-													<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">My Hobbies</a>
+													<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Sideline</a>
 												</li>
 											</ul>
 											<div class="tab-content" id="myTabContent">
