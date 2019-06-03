@@ -1,7 +1,6 @@
 @import url(font-awesome.min.css);
 @import "https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400";
-
-
+@import url('https://fonts.googleapis.com/css?family=Anton|Oswald|Roboto&display=swap');
 html, body, div, span, applet, object,
 iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
@@ -51,8 +50,12 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+#head{
+	font-family: 'Oswald', sans-serif;
+}
 #me{
 	background: -webkit-linear-gradient(  right, #65c7f7, #0c429b);
+	font-family: 'Roboto', sans-serif;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
@@ -216,7 +219,6 @@ input, select, textarea {
 		-ms-transition: color 0.2s ease, border-bottom 0.2s ease;
 		transition: color 0.2s ease, border-bottom 0.2s ease;
 		text-decoration: none;
-		border-bottom: dotted 1px;
 		color: inherit;
 	}
 
