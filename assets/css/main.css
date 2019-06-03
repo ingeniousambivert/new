@@ -64,12 +64,15 @@ table {
 
 .repo-container{
 width: auto;
-padding:2%;
 height: 500px;
 background: white;
 overflow-y: scroll;
 }
 
+.card-body{
+	background: rgba(238, 238, 238, 0.041);
+
+}
 
 /* Float four columns side by side */
 .column {
