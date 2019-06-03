@@ -11,14 +11,14 @@
 		<script src="./assets/js/script.js"></script>
 		  <!-- Bootstrap CSS -->
 			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
 		<!--TypeIt JS-->
 		<script src="https://cdn.jsdelivr.net/npm/typeit@VERSION_NUMBER/dist/typeit.min.js" />
-<script>
+		<script>
 		new TypeIt('#subhead', {
-  strings: 'Browse my growing portfolio of progressive development, feel free to drop a line.',
-  speed: 50,
-  waitUntilVisible: true
-}).go();
+  	strings: 'Browse my growing portfolio of progressive development, feel free to drop a line.',
+  	speed: 50,
+		}).go();
 </script>
 
     <meta charset="utf-8">
@@ -145,10 +145,10 @@
 									<form action="https://formspree.io/monarchmaisuriya7600@gmail.com" method="POST">
 										<div class="row gtr-uniform">
 											<div class="col-6 col-12-xsmall">
-												<input type="text" name="name" id="demo-name" value="" placeholder="John Doe" />
+												<input type="text" name="name" id="demo-name" placeholder="John Doe" />
 											</div>
 											<div class="col-6 col-12-xsmall">
-												<input type="email" name="email" id="demo-email" value="" placeholder="john@doe.com" />
+												<input type="email" name="email" id="demo-email" placeholder="john@doe.com" />
 											</div>
 											
 											<div class="col-12">
@@ -207,7 +207,7 @@
 							}
               output += `
               <div class="col-sm-6">
-        <div class="card" style="margin:2%;">
+        <div class="card" style="margin:2%; border:1px solid darkgrey;">
           <div class="card-body">
              <h5 class="card-title"><strong><i class="${icon()}"> </i><a href="${
                repo.html_url
