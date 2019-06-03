@@ -55,11 +55,18 @@ table {
 	font-family: 'Oswald', sans-serif;
 }
 #me{
-	background: -webkit-linear-gradient(  right, #65c7f7, #0c429b);
+	background: -webkit-linear-gradient( right, #5c258d, #516395);
 	font-family: 'Roboto', sans-serif;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+#greet{
+	background: -webkit-linear-gradient( right,  #614385, #516395);
+	font-family: 'Roboto', sans-serif;
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
 
 .repo-container{
 width: auto;
