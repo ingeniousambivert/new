@@ -55,17 +55,29 @@ table {
 	font-family: 'Oswald', sans-serif;
 }
 #me{
-	background: -webkit-linear-gradient( right, #5c258d, #516395);
+	background: -webkit-linear-gradient( left, #875A8D, #625196);
 	font-family: 'Roboto', sans-serif;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
 #greet{
-	background: -webkit-linear-gradient( right,  #614385, #516395);
+	background: -webkit-linear-gradient( #875A8D,#875A8D);
 	font-family: 'Roboto', sans-serif;
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
+#home-tab { 
+	color:#6e6096;
+  }
+#home-tab:active { 
+	color:darkgray !important;
+  }
+#profile-tab { 
+	color:#6e6096;
+  }
+#profile-tab:active { 
+	color:darkgray !important;
+  }
 
 
 .repo-container{
