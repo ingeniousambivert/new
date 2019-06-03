@@ -64,20 +64,10 @@ table {
 
 .repo-container{
 width: auto;
-height: 440px;
+padding:2%;
+height: 500px;
 background: white;
-border-radius: 10px;
 overflow-y: scroll;
-}
-
-.repo-list{
-	text-align:left;
-	color:white;
-	margin:5%;
-	width:55%;
-	display:inline-block;
-	line-break: auto;
-	border-radius: 10px;
 }
 
 
@@ -3830,6 +3820,4 @@ input, select, textarea {
 
 		}
 
-
-
-		
+	
