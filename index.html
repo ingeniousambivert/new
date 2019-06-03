@@ -14,6 +14,8 @@
     <link rel="shortcut icon" href="{{"/image/favicon.ico" | relURL}}" type="image/x-icon" />
 		<link rel="icon" href="{{"/image/favicon.ico" | relURL}}" type="image/x-icon" />
 		<script src="./assets/js/script.js"></script>
+		  <!-- Bootstrap CSS -->
+			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -29,17 +31,17 @@
 					<header id="header" class="alt">
 						<span class="logo"><img src="images/logo.svg" alt="" /></span>
 						<h1 id="head">Computer Whisperer</h1>
-						<p id="subhead">Browse my growing portfolio of progressive development, feel free to drop a line.<br />
+						<p id="subhead" style="color:white;">Browse my growing portfolio of progressive development, feel free to drop a line.<br />
 						</p>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
-						<ul>
-							<li><a href="#intro" class="active">Introduction</a></li>
-							<li><a href="#first">Skills</a></li>
-							<li><a href="#second">Work</a></li>
-							<li><a href="#third">Contact</a></li>
+						<ul >
+							<li><a style="color: #635196" href="#intro" class="active">Introduction</a></li>
+							<li><a style="color: #635196" href="#first">Skills</a></li>
+							<li><a style="color: #635196" href="#second">Work</a></li>
+							<li><a style="color: #635196" href="#third">Contact</a></li>
 						</ul>
 					</nav>
 
@@ -84,7 +86,7 @@
 									</li>
 									<li>
 										<span class="image"><img src="images/OOP.png" alt="Object Oriented programming" /></span>
-										<h3>Object Oriented programming</h3>
+										<h3>Object Oriented Programming</h3>
 										<p>I can create competent programmes in C++, C , Python.</p>
 									</li>
 									<li>
@@ -106,14 +108,10 @@
 										<small>Here are a few of my projects that I've worked on by myself or collaborated with other talented developers to create.</small>
 									</header>
 								
-							<div class="repo-container" >
-									<div class="row">
-										 <div class="column">
-									   	<div class="repo-list" id="output">	
-										</div>		
+								<div class="repo-container">
+										<div class="row" id="output"></div>
 								</div>
-							</div>		
-						</div>
+							
 								
 								<footer class="major">
 									<ul class="actions special">
@@ -153,13 +151,13 @@
 					<footer id="footer">
 						<section>
 							<h2>Inspiration</h2>
-							<blockquote id="quote"></blockquote>
+							<blockquote style="color:white;" id="quote"></blockquote>
 						</section>
 						<section>
 							<h2>Social Links</h2>
 							<dl class="alt">
 								<dt>Email</dt>
-								<dd><a href="mailto:monarchmaisuriya7600@gmail.com">monarchmaisuriya7600@gmail.com</a></dd>
+								<dd><a style="color:white;"href="mailto:monarchmaisuriya7600@gmail.com">monarchmaisuriya7600@gmail.com</a></dd>
 							</dl>
 							<ul class="icons">
 							
@@ -169,7 +167,7 @@
 								<li><a href="https://www.eyeem.com/ingeniousambivert" target="_blank" class="icon fa-camera alt"><span class="label">EyeEM</span></a></li>
 							</ul>
 						</section>
-						<p> Made with ❤  <br>Inspired by <a href="https://twitter.com/ajlkn" target="_blank">ajlkn</a></p>
+						<p style="color: #fff" > Made with  ❤  <br>Inspired by <a href="https://twitter.com/ajlkn" style="color:white;" target="_blank">ajlkn</a></p>
 					</footer>
 
 			</div>
@@ -177,31 +175,36 @@
 		
 			<!-- Scripts -->
 			<script>
-				// To fetch Github Repo 
-
-    function getRepos(){
-      //fetch('https://jsonplaceholder.typicode.com/posts')
-			fetch('https://api.github.com/users/ingeniousambivert/repos?sort=created:asc&client_id=22ea12584240e7a2631f&client_secret=bc2deb37cb23d714f3b16483ba93a4a0e61f93e9')
-      .then((res) => res.json())
-      .then((data) => {
-        let output = '';
-        data.forEach(function(repo){
-					output += `
-				<div style="margin:2%; padding:2%; color:white;background: -webkit-linear-gradient(to right, rgb(161, 109, 163), rgb(104, 128, 209));
-				background: linear-gradient(to right, rgb(161, 109, 163), rgb(104, 128, 209));  border-radius: 10px;"
-			<strong><a href="${repo.html_url} target="_blank">${repo.name}</a></strong> 
-			<p>${repo.description}</p>
-	</div>
-					`;
-        });
-        document.getElementById('output').innerHTML = output;
-      })
-			 .catch((err) => console.log(err))
-    }
-
-		getRepos();
-
-  </script>
+					// To fetch Github Repo
+		
+					function getRepos() {
+						//fetch('https://jsonplaceholder.typicode.com/posts')
+						fetch(
+							"https://api.github.com/users/ingeniousambivert/repos?sort=created:asc&client_id=22ea12584240e7a2631f&client_secret=bc2deb37cb23d714f3b16483ba93a4a0e61f93e9"
+						)
+							.then(res => res.json())
+							.then(data => {
+								let output = "";
+								data.forEach(function(repo) {
+									output += `
+									<div class="col-sm-6">
+						<div class="card" style="margin:2%;">
+							<div class="card-body">
+						<h5 class="card-title"><strong><a href="${repo.html_url}target="_blank">${repo.name}</a></strong> </h5>
+						<p style="color:#686868;" class="card-text">${repo.description}</p></div>
+						</div>
+					</div>
+									 
+		
+										`;
+								});
+								document.getElementById("output").innerHTML = output;
+							})
+							.catch(err => console.log(err));
+					}
+		
+					getRepos();
+				</script>
 			<script>
 			// To generate random quotes
 
@@ -227,7 +230,11 @@ function randomQ() {
 randomQ();
 			</script>
 
-			
+			 <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 			
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/jquery.scrollex.min.js"></script>
