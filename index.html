@@ -11,7 +11,7 @@
 		<script src="./assets/js/script.js"></script>
 		  <!-- Bootstrap CSS -->
 			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css"></script>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -191,21 +191,26 @@
           .then(res => res.json())
           .then(data => {
             let output = "";
-						
+						let len = 0;
             data.forEach(function(repo) {
+						 icon = () => {
+							return len % 3 === 0 ? 'icon fa-file-code-o ' : 'icon fa-code' ;
+							}
               output += `
               <div class="col-sm-6">
         <div class="card" style="margin:2%;">
           <div class="card-body">
-             <h5 class="card-title"><strong><a href="${
+             <h5 class="card-title"><strong><i class="${icon()}"> </i><a href="${
                repo.html_url
              } target="_blank" style="color:#6e6096;">${repo.name}</a></strong> </h5>
        <p class="card-text">${repo.description}</p>
           </div>
         </div>
       </div>
-       `;
+       `;len++;
+		
             });
+					
             document.getElementById("output").innerHTML = output;
           })
           .catch(err => console.log(err));
