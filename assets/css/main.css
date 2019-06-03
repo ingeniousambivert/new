@@ -79,6 +79,15 @@ table {
 	color:darkgray !important;
   }
 
+  @media only screen and (max-width: 500px)
+  {
+#profile{
+	margin-top: 6%;
+}
+#home{
+	margin-top: 6%;
+}
+}
 
 .repo-container{
 width: auto;
