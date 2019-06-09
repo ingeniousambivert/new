@@ -74,12 +74,14 @@ table {
 
   @media only screen and (max-width: 500px)
   {
-#profile{
-	margin-top: 6%;
-}
-#home{
-	margin-top: 6%;
-}
+		#profile{
+			margin-top: 6%;
+			font-size: 0.65rem;
+		}
+		#home{
+			margin-top: 6%;
+			font-size: 0.65rem;
+		}
 }
 
 .repo-container{
