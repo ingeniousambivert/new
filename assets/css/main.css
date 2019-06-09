@@ -60,13 +60,13 @@ table {
 	font-family: 'Oswald', sans-serif;
 }
 #home-tab { 
-	color:#6e6096;
+	color:rgb(116, 105, 218) ;
   }
 #home-tab:active { 
 	color:darkgray !important;
   }
 #profile-tab { 
-	color:#6e6096;
+	color:rgb(116, 105, 218) ; 
   }
 #profile-tab:active { 
 	color:darkgray !important;
