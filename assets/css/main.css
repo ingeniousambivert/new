@@ -37,6 +37,9 @@ ol, ul {
 h1{
 	color:white;
 }
+.info{
+	font-size: .80rem;
+}
 #me{
 color: rgb(101, 92, 180) ; 
 font-size: 2rem;
@@ -88,7 +91,7 @@ table {
 
 .repo-container{
 width: auto;
-height: 480px;
+height: 530px;
 background: white;
 overflow-y: scroll;
 }
