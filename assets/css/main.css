@@ -42,6 +42,9 @@ h1{
 .info{
 	font-size: .80rem;
 }
+.subtext{
+	font-size: 1.25rem;
+}
 #me{
 color: rgb(101, 92, 180) ; 
 font-size: 2rem;
@@ -88,6 +91,9 @@ table {
 		}
 		#me{
 			font-size: 1.65rem;
+		}
+		.subtext{
+			font-size: 1rem;
 		}
 }
 
