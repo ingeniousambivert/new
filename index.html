@@ -34,7 +34,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Ambiverse</title>
 	</head>
-	<body class="is-preload" onload="	type_it();">
+	<body class="is-preload" onload="type_it();">
 
 		<!-- Wrapper -->
 			<div id="wrapper">
@@ -201,49 +201,48 @@
 
 		
 			<!-- Scripts -->
-			<script>
-					// To fetch Github Repo
+			<script type="text/javascript">
+					// To fetch Github Repos
 		
-					function getRepos() {
-        fetch(
-     "https://api.github.com/users/ingeniousambivert/repos?sort=created:asc&client_id=22ea12584240e7a2631f&client_secret=bc2deb37cb23d714f3b16483ba93a4a0e61f93e9"
-        )
-          .then(res => res.json())
-          .then(data => {
-            let output = "";
-						let len = 0;
-            data.forEach(function(repo) {
-						 icon = () => {
-							return len % 3 === 0 ? 'icon fa-file-code-o ' : 'icon fa-code' ;
-							}
+					 getRepos = () => {
+				fetch(
+			"https://api.github.com/users/ingeniousambivert/repos?sort=created:asc&client_id=22ea12584240e7a2631f&client_secret=bc2deb37cb23d714f3b16483ba93a4a0e61f93e9"
+				)
+				.then(res => res.json())
+				.then(data => {
+					let output = "";
+								let len = 0;
+					data.forEach(function(repo) {
+								icon = () => {
+									return len % 3 === 0 ? 'icon fa-file-code-o ' : 'icon fa-code' ;
+									}
               output += `
-              <div class="col-sm-6">
-        <div class="card" style="margin:2%; border:1px solid #bfbfbf;">
-          <div class="card-body">
-             <h5 class="card-title"><strong><i class="${icon()}"> </i><a target='_blank' style='color:#6e6096'; href="${
-               repo.html_url
-             }">${repo.name}</a></strong> </h5>
-       <p class="card-text">${repo.description}</p>
-          </div>
-        </div>
-      </div>
-       `;len++;
-		
+						<div class="col-sm-6">
+					<div class="card" style="margin:2%; border:1px solid #bfbfbf;">
+					<div class="card-body">
+						<h5 class="card-title"><strong><i class="${icon()}"> </i><a target='_blank' style='color:#6e6096'; href="${
+						repo.html_url
+						}">${repo.name}</a></strong> </h5>
+				<p class="card-text">${repo.description}</p>
+					</div>
+					</div>
+				</div>
+				`;
+				len++;	
             });
 					
             document.getElementById("output").innerHTML = output;
           })
           .catch(err => console.log(err));
       }
-
       getRepos();
 				</script>
-				
-			<script>
+		
+			<script type="text/javascript">
 			// To generate random quotes
 
- randomQ = () => {
-    let q = new Array()
+ 		randomQ = () => {
+  	  let q = new Array()
 
     q[1] = "We have seen that computer programming is an art, because it applies accumulated knowledge to the world, because it requires skill and ingenuity, and especially because it produces objects of beauty. - Paul Graham";
     q[2] = "Programming today is a race between software engineers striving to build bigger and better idiot-proof programs, and the Universe trying to produce bigger and better idiots. So far, the Universe is winning. - Rich Cook";
