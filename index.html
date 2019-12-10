@@ -1,290 +1,495 @@
-<!DOCTYPE HTML>
+<!DOCTYPE html>
 <html>
-	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-			<meta name="title" content="Portfolio Website">
-			<meta name="description"
-			content="Portfolio of a fullstack developer named Monarch Maisuriya. Online alias - ingeniousambivert">
-			<meta name="keywords" content="portfolio,ingeniousambivert">
-			<meta name="robots" content="index, follow">
-			<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-			<meta name="language" content="English">
-			<meta name="author" content="Monarch Maisuriya">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, user-scalable=no"
+    />
+    <meta name="title" content="Portfolio Website" />
+    <meta
+      name="description"
+      content="Portfolio of a fullstack developer named Monarch Maisuriya. Online alias - ingeniousambivert"
+    />
+    <meta name="keywords" content="portfolio,ingeniousambivert" />
+    <meta name="robots" content="index, follow" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="language" content="English" />
+    <meta name="author" content="Monarch Maisuriya" />
 
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-		<link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
-    <link rel="shortcut icon" href="{{'./images/favicon.ico' | relURL}}" type="image/x-icon" />
-		<link rel="icon" href="{{'./images/favicon.ico' | relURL}}" type="image/x-icon" />
-		<script src="./assets/js/script.js"></script>
-		  <!-- Bootstrap CSS -->
-			<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css"/></noscript>
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon" />
+    <link
+      rel="shortcut icon"
+      href="{{'./images/favicon.ico' | relURL}}"
+      type="image/x-icon"
+    />
+    <link
+      rel="icon"
+      href="{{'./images/favicon.ico' | relURL}}"
+      type="image/x-icon"
+    />
+    <script src="./assets/js/script.js"></script>
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
 
-	  <!--Typeit JS-->
-		<script src="./assets/js/typeit.min.js"></script>
-		<script src="./assets/js/typeit.js"></script>
-		<!-- Typeit JS Instance-->
-		<script type="text/javascript">
-		type_it = () =>{
-			return 	new TypeIt('#subhead', {
-				strings: ["Browse my growing portfolio of progressive development, feel free to drop a line."],
-				speed: 80,
-				breakLines: false,
-				autoStart: false,
-				loop: false
-			});
-		}
-	
-		</script>
+    <!--Typeit JS-->
+    <script src="./assets/js/typeit.min.js"></script>
+    <script src="./assets/js/typeit.js"></script>
+    <!-- Typeit JS Instance-->
+    <script type="text/javascript">
+      type_it = () => {
+        return new TypeIt("#subhead", {
+          strings: [
+            "Browse my growing portfolio of progressive development, feel free to drop a line."
+          ],
+          speed: 80,
+          breakLines: false,
+          autoStart: false,
+          loop: false
+        });
+      };
+    </script>
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Ambiverse</title>
-	</head>
-	<body class="is-preload" onload="type_it();">
+  </head>
+  <body class="is-preload" onload="type_it();">
+    <!-- Wrapper -->
+    <div id="wrapper">
+      <!-- Header -->
+      <header id="header" class="alt">
+        <span class="logo"><img src="images/logo.svg" alt=""/></span>
+        <h1 id="head">Computer Whisperer</h1>
+        <p id="subhead" style="color:white;">
+          Browse my growing portfolio of progressive development, feel free to
+          drop a line.
+        </p>
+      </header>
 
-		<!-- Wrapper -->
-			<div id="wrapper">
+      <!-- Nav -->
+      <nav id="nav">
+        <ul>
+          <li>
+            <a style="color: #636363" href="#intro" class="active"
+              >Introduction</a
+            >
+          </li>
+          <li><a style="color: #636363" href="#skills">Skills</a></li>
+          <li><a style="color: #636363" href="#work">Work</a></li>
+          <li><a style="color: #636363" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
 
-				<!-- Header -->
-					<header id="header" class="alt">
-						<span class="logo"><img src="images/logo.svg" alt="" /></span>
-						<h1 id="head">Computer Whisperer</h1>
-						<p id="subhead" style="color:white;">Browse my growing portfolio of progressive development, feel free to drop a line.
-						</p>
-					</header>
+      <!-- Main -->
+      <div id="main">
+        <!-- Introduction -->
+        <section id="intro" class="main">
+          <div class="spotlight">
+            <div class="content">
+              <header class="major" id="greeting">
+                <h2 id="greet">Hey, Its <span id="me">Monarch</span></h2>
+              </header>
 
-				<!-- Nav -->
-					<nav id="nav">
-						<ul >
-							<li><a style="color: #636363" href="#intro" class="active">Introduction</a></li>
-							<li><a style="color: #636363" href="#skills">Skills</a></li>
-							<li><a style="color: #636363" href="#work">Work</a></li>
-							<li><a style="color: #636363" href="#contact">Contact</a></li>
-						</ul>
-					</nav>
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item">
+                  <a
+                    class="nav-link active"
+                    id="home-tab"
+                    data-toggle="tab"
+                    href="#home"
+                    role="tab"
+                    aria-controls="home"
+                    aria-selected="true"
+                    >Mainstream</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link"
+                    id="profile-tab"
+                    data-toggle="tab"
+                    href="#profile"
+                    role="tab"
+                    aria-controls="profile"
+                    aria-selected="false"
+                    >Sideline</a
+                  >
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="home"
+                  role="tabpanel"
+                  aria-labelledby="home-tab"
+                >
+                  <p style="margin-top:2%;padding:1%;font-size: 1.1rem;">
+                    I am a self taught developer based in India. I am an
+                    inquisitive experimenter I’ve had opportunities to learn &
+                    pursue programming to develop excellent software that
+                    improves the lives of those around me. I've always been
+                    enthusiastic about technology. My skills are broad from
+                    front-end to back-end development. I enjoy each aspect, &
+                    love building websites & applications from start to finish.
+                    I'm available for remote work - if you would like to build
+                    something together,
+                    <a href="#contact" style="color:indianred">
+                      get in touch.</a
+                    >
+                  </p>
+                  <ul class="actions">
+                    <li>
+                      <a
+                        href="https://docs.google.com/document/d/e/2PACX-1vR_jVpJ0S8REmBWIS5TArfsfZvjpVwZQYb7zHY50WTupgmUW1GpnW3u3o21InsCkQ51sL-lqGEbzi24/pub"
+                        target="_blank"
+                        class="button small"
+                        >View CV</a
+                      >
+                    </li>
+                  </ul>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="profile"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                >
+                  <p style="margin-top:2%;padding:1%;font-size: 1.1rem;">
+                    It’s always been said that pictures can capture a thousand
+                    words. It is true in every essence of the phrase. I am not a
+                    professional photographer by any means, but whole-heartedly,
+                    I am a photo enthusiast. I love colors, lighting, props,
+                    apertures, capturing the perfect moment, basically
+                    <a
+                      href="https://www.eyeem.com/ingeniousambivert"
+                      target="_blank"
+                      style="color:indianred"
+                      >photography</a
+                    >.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
 
-				<!-- Main -->
-					<div id="main">
+        <!-- First Section -->
+        <section id="skills" class="main special">
+          <header class="major">
+            <h2>I am great at</h2>
+          </header>
+          <ul class="features">
+            <li>
+              <span class="image"
+                ><img
+                  src="images/frontend-development.png"
+                  alt="Front-End Development"
+              /></span>
+              <h3>Front-End Development</h3>
+              <p class="info">
+                I can create websites with Dynamic-HTML/Web Suite (2.0) & SPAs
+                with ReactJS.
+              </p>
+            </li>
+            <li>
+              <span class="image"
+                ><img src="images/backend.png" alt="Back-End Development"
+              /></span>
+              <h3>Back-End Development</h3>
+              <p class="info">
+                I can create servers with PHP, Node/Express, FeathersJS & work
+                with MySQL & MongoDB.
+              </p>
+            </li>
+            <li>
+              <span class="image"
+                ><img
+                  src="images/fullstack.svg"
+                  alt="Full Stack Web Development"
+              /></span>
+              <h3>Full Stack Web Development</h3>
+              <p class="info">
+                I can create progressive/web-apps with MERN Stack, JAMStack &
+                PHP Stacks.
+              </p>
+            </li>
+            <li>
+              <span class="image"
+                ><img src="images/OOP.png" alt="Object Oriented programming"
+              /></span>
+              <h3>OOP, Procedural & Functional</h3>
+              <p class="info">
+                I can write efficient programming solutions with C, C++,
+                JavaScript, Python3 & work with methodical DS/Algos in them.
+              </p>
+            </li>
+            <li>
+              <span class="image"
+                ><img src="images/app-dev.png" alt="App Development"
+              /></span>
+              <h3>Application Development</h3>
+              <p class="info">
+                I can create multi-platform hybrid applications with React
+                Native , Ionic Frameworks & Flutter.
+              </p>
+            </li>
+          </ul>
+        </section>
 
-						<!-- Introduction -->
-							<section id="intro" class="main">
-								<div class="spotlight">
-									<div class="content">
-											<header class="major" id="greeting">
-													<h2 id="greet">Hey, Its <span id="me">Monarch</span></h2>
-													
-												</header>
-												
-										<ul class="nav nav-tabs" id="myTab" role="tablist">
-												<li class="nav-item">
-													<a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" >Mainstream</a>
-												</li>
-												<li class="nav-item">
-													<a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false" >Sideline</a>
-												</li>
-											</ul>
-											<div class="tab-content" id="myTabContent">
-												<div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-													<p style="margin-top:2%;padding:1%;font-size: 1.1rem;">I am a self taught developer based in India. I am an inquisitive experimenter I’ve had opportunities to learn & pursue programming to develop excellent software that improves the lives of those around me. I've always been enthusiastic about technology. My skills are broad from front-end to back-end development. I enjoy each aspect, & love building websites & applications from start to finish. I'm available for remote work - if you would like to build something together, <a href="#contact" style="color:indianred"> get in touch.</a></p>
-													<ul class="actions">
-														<li><a href="https://docs.google.com/document/d/e/2PACX-1vR_jVpJ0S8REmBWIS5TArfsfZvjpVwZQYb7zHY50WTupgmUW1GpnW3u3o21InsCkQ51sL-lqGEbzi24/pub" target="_blank" class="button small">View CV</a></li>
-													</ul></div>
-												<div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab"><p style="margin-top:2%;padding:1%;font-size: 1.1rem;">It’s always been said that pictures can capture a thousand words. It is true in every essence of the phrase. I am not a professional photographer by any means, but whole-heartedly, I am a photo enthusiast. I love colors, lighting, props, apertures, capturing the perfect moment, basically <a href="https://www.eyeem.com/ingeniousambivert"target="_blank" style="color:indianred">photography</a>.</p></div>
-											</div>
-									</div>
-								</div>
-							</section>
+        <!-- Second Section -->
 
-						<!-- First Section -->
-							<section id="skills" class="main special">
-								<header class="major">
-									<h2>I am great at</h2>
-								</header>
-								<ul class="features">
-									<li>
-										<span class="image"><img src="images/frontend-development.png" alt="Front-End Development" /></span>
-										<h3>Front-End Development</h3>
-										<p class="info">I can create websites with Dynamic-HTML/Web Suite (2.0) & SPAs with ReactJS.</p>
-									</li>
-									<li>
-										<span class="image"><img src="images/backend.png" alt="Back-End Development" /></span>
-										<h3>Back-End Development</h3>
-										<p class="info">I can create servers with PHP, Node/Express, FeathersJS & work with MySQL & MongoDB.</p>
-									</li>
-									<li>
-										<span class="image"><img src="images/fullstack.svg" alt="Full Stack Web Development" /></span>
-										<h3>Full Stack Web Development</h3>
-										<p class="info">I can create progressive/web-apps with MERN Stack, JAMStack & PHP Stacks.</p>
-									</li>
-									<li>
-										<span class="image"><img src="images/OOP.png" alt="Object Oriented programming" /></span>
-										<h3>OOP, Procedural & Functional  </h3>
-										<p class="info">I can write efficient programming solutions with C, C++, JavaScript, Python3 & work with methodical DS/Algos in them. </p>
-									</li>
-									<li>
-										<span class="image"><img src="images/app-dev.png" alt="App Development" /></span>
-										<h3>Application Development</h3>
-										<p class="info">I can create multi-platform hybrid applications with React Native, Ionic & Flutter.</p>
-									</li>
-								</ul>
-								
-							</section>
+        <!--Github Repos Fetched And Displayed Here-->
 
-						<!-- Second Section -->
-						
-								<!--Github Repos Fetched And Displayed Here-->
-						
-								<section id="work" class="main special">
-									<header class="major">
-										<h2>I have worked on</h2>
-										<p>Here's a brief of my <a style='color:#6e6096' href="https://github.com/ingeniousambivert" target="_blank">GitHub</a>, so you get an idea of my work and its kind.</p>
-									</header>
-								
-								<div class="repo-container">
-										<div class="row" id="output"></div>
-								</div>
-							
-								
-								<footer class="major">
-									<ul class="actions special">
-										<li><a href="https://github.com/ingeniousambivert?tab=repositories" target="_blank" class="button small">View More</a></li>
-									</ul>
-								</footer>
-							</section>
+        <section id="work" class="main special">
+          <header class="major">
+            <h2>I have worked on</h2>
+            <p>
+              Here's a brief of my
+              <a
+                style="color:#6e6096"
+                href="https://github.com/ingeniousambivert"
+                target="_blank"
+                >GitHub</a
+              >, so you get an idea of my work and its kind.
+            </p>
+          </header>
 
-						<!-- Contact -->
-							<section id="contact" class="main special">
-								<header class="major">
-									<h2>Write to me</h2>
-								</header>
-									<p class="subtext">Interested in working with me ? Lets collaborate on an upcoming project.
-										Queue Up A Chat!</p>
-									<form action="https://formspree.io/monarchmaisuriya7600@gmail.com" method="POST">
-										<div class="row gtr-uniform">
-											<div class="col-6 col-12-xsmall">
-												<input type="text" name="name" id="demo-name" placeholder="John Doe" />
-											</div>
-											<div class="col-6 col-12-xsmall">
-												<input type="email" name="email" id="demo-email" placeholder="john@doe.com" />
-											</div>
-											
-											<div class="col-12">
-												<textarea name="message" id="demo-message" placeholder="“Languages are your power & variables your slaves, Mr.Programmer”" rows="6"></textarea>
-											</div>
-											<div class="col-12">
-												<input type="submit" value="Send Message" class="primary" />
-											</div>
-										</div>
-									</form>
-								</section>
+          <div class="repo-container">
+            <div class="row" id="output"></div>
+          </div>
 
-					</div>
+          <footer class="major">
+            <ul class="actions special">
+              <li>
+                <a
+                  href="https://github.com/ingeniousambivert?tab=repositories"
+                  target="_blank"
+                  class="button small"
+                  >View More</a
+                >
+              </li>
+            </ul>
+          </footer>
+        </section>
 
-				<!-- Footer -->
-					<footer id="footer">
-						<section>
-							<h2>Inspiration</h2>
-							<blockquote style="color:white;" id="quote"></blockquote>
-						</section>
-						<section>
-							<h2>Social Links</h2>
-							<dl class="alt">
-								<dt>Email</dt>
-								<dd><a style="color:white;"href="mailto:monarchmaisuriya7600@gmail.com">monarchmaisuriya7600@gmail.com</a></dd>
-							</dl>
-							<ul class="icons">
-							
-								<li><a href="https://www.facebook.com/ingeniousambivert" target="_blank" class="icon fa-facebook alt"><span class="label">Facebook</span></a></li>
-								<li><a href="https://www.instagram.com/ingeniousambivert" target="_blank" class="icon fa-instagram alt"><span class="label">Instagram</span></a></li>
-								<li><a href="https://www.github.com/ingeniousambivert" target="_blank" class="icon fa-github alt"><span class="label">GitHub</span></a></li>
-								<li><a href="https://www.eyeem.com/ingeniousambivert" target="_blank" class="icon fa-camera alt"><span class="label">EyeEM</span></a></li>
-							</ul>
-						</section>
-						<p style="color: #fff" > Made with  ❤  <br>Inspired by <a href="https://twitter.com/ajlkn" style="color:white;" target="_blank">ajlkn</a></p>
-					</footer>
+        <!-- Contact -->
+        <section id="contact" class="main special">
+          <header class="major">
+            <h2>Write to me</h2>
+          </header>
+          <p class="subtext">
+            Interested in working with me ? Lets collaborate on an upcoming
+            project. Queue Up A Chat!
+          </p>
+          <form
+            action="https://formspree.io/monarchmaisuriya7600@gmail.com"
+            method="POST"
+          >
+            <div class="row gtr-uniform">
+              <div class="col-6 col-12-xsmall">
+                <input
+                  type="text"
+                  name="name"
+                  id="demo-name"
+                  placeholder="John Doe"
+                />
+              </div>
+              <div class="col-6 col-12-xsmall">
+                <input
+                  type="email"
+                  name="email"
+                  id="demo-email"
+                  placeholder="john@doe.com"
+                />
+              </div>
 
-			</div>
+              <div class="col-12">
+                <textarea
+                  name="message"
+                  id="demo-message"
+                  placeholder="“Languages are your power & variables your slaves, Mr.Programmer”"
+                  rows="6"
+                ></textarea>
+              </div>
+              <div class="col-12">
+                <input type="submit" value="Send Message" class="primary" />
+              </div>
+            </div>
+          </form>
+        </section>
+      </div>
 
-		
-			<!-- Scripts -->
-			<script type="text/javascript">
-					// To fetch Github Repos
-		
-					 getRepos = () => {
-				fetch(
-			"https://api.github.com/users/ingeniousambivert/repos?sort=created:asc&client_id=22ea12584240e7a2631f&client_secret=bc2deb37cb23d714f3b16483ba93a4a0e61f93e9"
-				)
-				.then(res => res.json())
-				.then(data => {
-					let output = "";
-								let len = 0;
-					data.forEach(function(repo) {
-								icon = () => {
-									return len % 3 === 0 ? 'icon fa-file-code-o ' : 'icon fa-code' ;
-									}
+      <!-- Footer -->
+      <footer id="footer">
+        <section>
+          <h2>Inspiration</h2>
+          <blockquote style="color:white;" id="quote"></blockquote>
+        </section>
+        <section>
+          <h2>Social Links</h2>
+          <dl class="alt">
+            <dt>Email</dt>
+            <dd>
+              <a
+                style="color:white;"
+                href="mailto:monarchmaisuriya7600@gmail.com"
+                >monarchmaisuriya7600@gmail.com</a
+              >
+            </dd>
+          </dl>
+          <ul class="icons">
+            <li>
+              <a
+                href="https://www.facebook.com/ingeniousambivert"
+                target="_blank"
+                class="icon fa-facebook alt"
+                ><span class="label">Facebook</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.instagram.com/ingeniousambivert"
+                target="_blank"
+                class="icon fa-instagram alt"
+                ><span class="label">Instagram</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.github.com/ingeniousambivert"
+                target="_blank"
+                class="icon fa-github alt"
+                ><span class="label">GitHub</span></a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.eyeem.com/ingeniousambivert"
+                target="_blank"
+                class="icon fa-camera alt"
+                ><span class="label">EyeEM</span></a
+              >
+            </li>
+          </ul>
+        </section>
+        <p style="color: #fff">
+          Made with ❤ <br />Inspired by
+          <a
+            href="https://twitter.com/ajlkn"
+            style="color:white;"
+            target="_blank"
+            >ajlkn</a
+          >
+        </p>
+      </footer>
+    </div>
+
+    <!-- Scripts -->
+    <script type="text/javascript">
+      // To fetch Github Repos
+
+      getRepos = () => {
+        fetch(
+          "https://api.github.com/users/ingeniousambivert/repos?sort=created:asc&client_id=22ea12584240e7a2631f&client_secret=bc2deb37cb23d714f3b16483ba93a4a0e61f93e9"
+        )
+          .then(res => res.json())
+          .then(data => {
+            let output = "";
+            let len = 0;
+            data.forEach(function(repo) {
+              icon = () => {
+                return len % 3 === 0 ? "icon fa-file-code-o " : "icon fa-code";
+              };
               output += `
 						<div class="col-sm-6">
 					<div class="card" style="margin:2%; border:1px solid #bfbfbf;">
 					<div class="card-body">
 						<h5 class="card-title"><strong><i class="${icon()}"> </i><a target='_blank' style='color:#6e6096'; href="${
-						repo.html_url
-						}">${repo.name}</a></strong> </h5>
+                repo.html_url
+              }">${repo.name}</a></strong> </h5>
 				<p class="card-text">${repo.description}</p>
 					</div>
 					</div>
 				</div>
 				`;
-				len++;	
+              len++;
             });
-					
+
             document.getElementById("output").innerHTML = output;
           })
           .catch(err => console.log(err));
-      }
+      };
       getRepos();
-				</script>
-		
-			<script type="text/javascript">
-			// To generate random quotes
+    </script>
 
- 		randomQ = () => {
-  	  let q = new Array()
+    <script type="text/javascript">
+      // To generate random quotes
 
-    q[1] = "We have seen that computer programming is an art, because it applies accumulated knowledge to the world, because it requires skill & ingenuity, & especially because it produces objects of beauty. - Paul Graham";
-    q[2] = "Programming today is a race between software engineers striving to build bigger & better idiot-proof programs, & the Universe trying to produce bigger & better idiots. So far, the Universe is winning. - Rich Cook";
-    q[3] = "A good programmer is someone who always looks both ways before crossing a one-way street. - Keith Weinberg";
-    q[4] = "Computer science education cannot make anybody an expert programmer any more than studying brushes & pigment can make somebody an expert painter. - Eric S. Raymond ";
-    q[5] = "Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to code. - Linus Torvalds";
-    q[6] = "You might not think programmers are artists, but programming is extremely creative profession. Its logic-based creativity. - John Romero";
-    q[7] = "Everyone should learn how to program a computer because it teaches you how to think. - Steve Jobs";
-    q[8] = "First solve the problem , then write the code. - John Johnson";
-    q[9] = "The most important property of a program is whether it accomplishes the intention of its user. - C.A.R Hoare";
-    q[10] = "Truth can only be found in one place: the code. - Robert C. Martin";
-    let ry = Math.floor(Math.random() * q.length);
-    if (ry == 0)
-        ry = 1;
-    document.getElementById("quote").innerHTML = q[ry];
+      randomQ = () => {
+        let q = new Array();
 
-}
-randomQ();
-			</script>
+        q[1] =
+          "We have seen that computer programming is an art, because it applies accumulated knowledge to the world, because it requires skill & ingenuity, & especially because it produces objects of beauty. - Paul Graham";
+        q[2] =
+          "Programming today is a race between software engineers striving to build bigger & better idiot-proof programs, & the Universe trying to produce bigger & better idiots. So far, the Universe is winning. - Rich Cook";
+        q[3] =
+          "A good programmer is someone who always looks both ways before crossing a one-way street. - Keith Weinberg";
+        q[4] =
+          "Computer science education cannot make anybody an expert programmer any more than studying brushes & pigment can make somebody an expert painter. - Eric S. Raymond ";
+        q[5] =
+          "Most good programmers do programming not because they expect to get paid or get adulation by the public, but because it is fun to code. - Linus Torvalds";
+        q[6] =
+          "You might not think programmers are artists, but programming is extremely creative profession. Its logic-based creativity. - John Romero";
+        q[7] =
+          "Everyone should learn how to program a computer because it teaches you how to think. - Steve Jobs";
+        q[8] = "First solve the problem , then write the code. - John Johnson";
+        q[9] =
+          "The most important property of a program is whether it accomplishes the intention of its user. - C.A.R Hoare";
+        q[10] =
+          "Truth can only be found in one place: the code. - Robert C. Martin";
+        let ry = Math.floor(Math.random() * q.length);
+        if (ry == 0) ry = 1;
+        document.getElementById("quote").innerHTML = q[ry];
+      };
+      randomQ();
+    </script>
 
-			 <!-- Optional JavaScript -->
+    <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-			
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
 
-	</body>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/jquery.scrollex.min.js"></script>
+    <script src="assets/js/jquery.scrolly.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+  </body>
 </html>
